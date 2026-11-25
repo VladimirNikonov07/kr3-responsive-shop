@@ -1,0 +1,68 @@
+/* Общие правила рассчитаны на телефон. */
+:root { --color-muted: #555e50; }
+img, video { max-width: 100%; height: auto; }
+:focus-visible { outline: 3px solid #365aaf; outline-offset: 3px; box-shadow: 0 0 0 3px white; }
+.container { width: calc(100% - 32px); }
+.site-header__inner { flex-wrap: wrap; gap: 8px 12px; padding-block: 10px; }
+.site-header__cta { margin-left: auto; }
+.menu-toggle { min-height: 44px; padding: 6px 12px; background: transparent; color: white; border: 1px solid #a4aa9c; border-radius: 6px; cursor: pointer; }
+.site-nav { order: 3; flex-basis: 100%; }
+.site-nav__list { gap: 4px 16px; }
+.site-nav__link { padding: 10px 0; }
+.site-nav__link::after { bottom: 3px; }
+.hero__layout, .catalog-layout, .product-detail, .order-layout, .form-grid, .guide-grid, .guide-card, .contacts-grid { grid-template-columns: minmax(0, 1fr); }
+.hero__layout { min-height: 0; gap: 24px; padding-block: 32px; }
+.hero__title { font-size: clamp(38px, 6vw, 68px); }
+.hero__visual, .product-detail__visual { width: 100%; }
+.hero__image { max-height: 420px; }
+.section { padding-block: clamp(32px, 5vw, 64px); }
+.section-heading, .guide-note { flex-wrap: wrap; align-items: flex-start; }
+.category-grid, .product-grid, .product-grid--four, .site-footer__main { grid-template-columns: minmax(0, 1fr); }
+.catalog-sidebar { position: static; }
+.catalog-sidebar nav { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.catalog-filter { margin-top: 16px; }
+.catalog-filter p { margin: 4px 0; font-size: .875rem; }
+.catalog-content, .form-field, .order-form-wrap { min-width: 0; }
+.form-field input, .form-field select, .form-field textarea { min-width: 0; max-width: 100%; min-height: 44px; font-size: 1rem; }
+.form-field--full { grid-column: 1 / -1; }
+.table-wrap { display: none; }
+.spec-cards { display: grid; gap: 8px; margin: 0; }
+.spec-cards div { padding: 12px 16px; background: var(--color-paper); border-radius: 6px; }
+.spec-cards dt { font-weight: 700; }
+.spec-cards dd { margin: 2px 0 0; }
+.order-dialog { max-width: calc(100% - 32px); max-height: 85dvh; overflow: auto; }
+.back-to-top { right: 8px; bottom: 8px; }
+@media (min-width: 420px) {
+  .category-grid, .site-footer__main { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 640px) {
+  .container { width: calc(100% - 48px); }
+  .product-grid, .form-grid, .contacts-grid, .guide-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .table-wrap { display: block; }
+  .spec-cards { display: none; }
+}
+@media (min-width: 768px) {
+  .menu-toggle { display: none; }
+  .site-header__inner { flex-wrap: nowrap; }
+  .site-nav { order: 0; flex-basis: auto; }
+  .site-header__cta { margin-left: 0; }
+  .hero__layout, .product-detail { grid-template-columns: 1fr .88fr; align-items: center; }
+  .hero__layout { min-height: 440px; }
+  .order-layout { grid-template-columns: minmax(190px, 1fr) minmax(0, 2fr); }
+}
+@media (min-width: 1024px) {
+  .category-grid, .product-grid--four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .catalog-layout { grid-template-columns: 200px minmax(0, 1fr); }
+  .catalog-sidebar { position: sticky; top: 95px; }
+  .catalog-sidebar nav { grid-template-columns: 1fr; }
+  .catalog-content .product-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .site-footer__main { grid-template-columns: 1.3fr 1fr 1fr 1.25fr; }
+  .guide-card { grid-template-columns: 1fr 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0s !important; }
+}.benefit-card__number { color: #4a5c24; }
+.benefit-grid { grid-template-columns: 1fr; }
+@media (min-width: 768px) {
+  .benefit-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}

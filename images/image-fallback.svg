@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 660" role="img" aria-labelledby="title desc">
+<title id="title">Изображение товара недоступно</title><desc id="desc">Заглушка PULSE SPORT LAB для отсутствующей иллюстрации.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#edf0e4"/><stop offset="1" stop-color="#cbd5b9"/></linearGradient></defs>
+<rect width="860" height="660" fill="url(#bg)"/><circle cx="650" cy="145" r="150" fill="#d3ff54" opacity=".8"/><path d="M0 525L860 365V660H0Z" fill="#dfe5d4"/>
+<g transform="translate(300 190)" fill="none" stroke="#171b16" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"><rect x="15" y="45" width="230" height="165" rx="20"/><path d="M75 45V18h110v27M75 210v28h110v-28"/><path d="M88 90h84m-84 45h84" stroke="#d3ff54" stroke-width="16"/></g>
+<text x="430" y="515" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" font-weight="800" letter-spacing="7" fill="#171b16">PULSE SPORT LAB</text><text x="430" y="552" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" letter-spacing="3" fill="#50594a">IMAGE NOT AVAILABLE</text>
+</svg>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Контактная информация, форма обращения и ответы на частые вопросы.">
+  <meta name="theme-color" content="#171b16">
+  <title>Контакты — PULSE SPORT LAB</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Перейти к содержимому</a>
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="index.html"><span class="logo__mark" aria-hidden="true">P</span><span class="logo__word">PULSE <small>SPORT LAB</small></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" hidden>Меню</button>
+    <nav id="site-menu" class="site-nav" aria-label="Основная навигация"><ul class="site-nav__list"><li><a class="site-nav__link" href="index.html">Главная</a></li><li><a class="site-nav__link" href="catalog.html">Каталог</a></li><li><a class="site-nav__link" href="guide.html">Подбор экипировки</a></li><li><a class="site-nav__link site-nav__link--active" href="contacts.html" aria-current="page">Контакты</a></li></ul></nav>
+    <a class="button button--small site-header__cta" href="order.html">Оставить заявку</a>
+  </div>
+</header>
+<main id="main-content" tabindex="-1">
+  <section class="page-intro"><div class="container"><nav class="breadcrumbs" aria-label="Хлебные крошки"><a href="index.html">Главная</a><span aria-hidden="true">/</span><span aria-current="page">Контакты</span></nav><h1>Контакты</h1><p>Есть вопрос по экипировке? Оставьте заявку, указав товар и удобный способ связи.</p></div></section>
+  <section class="section section--paper"><div class="container contacts-grid"><article class="contact-box"><h2>Вопрос по товару</h2><p>Уточните размер, характеристики или наличие выбранной позиции.</p><a class="button" href="order.html?topic=product">Оставить заявку <span aria-hidden="true">↗</span></a></article><article class="contact-box contact-box--dark"><h2>Нужна помощь с выбором?</h2><p>Посмотрите рекомендации по подбору экипировки для разных видов активности.</p><a class="button button--light" href="guide.html">Открыть гид <span aria-hidden="true">↗</span></a></article></div></section>
+  <section class="section section--white" id="faq"><div class="container"><div class="section-heading"><div><h2>Частые вопросы</h2></div></div><div class="faq-list"><details><summary>Можно ли оформить настоящий заказ?</summary><p>Нет. Это учебный проект. Форма проверяет заполнение полей в браузере, но не передаёт и не сохраняет заявки.</p></details><details><summary>Как уточнить характеристики товара?</summary><p>Выберите товар в форме заявки и напишите, какие характеристики хотите уточнить.</p></details><details><summary>Почему цены указаны в каталоге?</summary><p>Цены приведены для демонстрации интернет-магазина и не являются предложением реальной продажи.</p></details><details><summary>Где посмотреть параметры кроссовок?</summary><p>Откройте <a href="product.html">карточку беговых кроссовок</a> — там размещена таблица характеристик.</p></details></div></div></section>
+<section class="section section--paper"><div class="container"><h2>Обратная связь</h2><form class="order-form-wrap" id="feedback-form"><div class="form-grid"><div class="form-field"><label for="sender">Имя</label><input id="sender" name="name" autocomplete="name" required></div><div class="form-field"><label for="reply">Электронная почта</label><input id="reply" name="email" type="email" autocomplete="email" required></div><div class="form-field form-field--full"><label for="question">Ваш вопрос</label><textarea id="question" name="message" rows="4" required></textarea></div></div><p><button class="button" type="submit">Проверить сообщение</button></p><p role="status" id="feedback-result"></p></form></div></section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__main">
+      <div class="site-footer__brand"><a class="logo logo--footer" href="index.html"><span class="logo__mark" aria-hidden="true">P</span><span class="logo__word">PULSE <small>SPORT LAB</small></span></a><p>Спортивная экипировка<br>для движения каждый день.</p></div>
+      <nav class="site-footer__column" aria-label="Покупателям"><h2>Покупателям</h2><a href="guide.html">Подбор экипировки</a><a href="order.html">Оставить заявку</a><a href="contacts.html#faq">Частые вопросы</a></nav>
+      <nav class="site-footer__column" aria-label="Каталог"><h2>Каталог</h2><a href="catalog.html">Все товары</a><a href="catalog.html#run">Бег</a><a href="catalog.html#train">Тренировки</a><a href="catalog.html#outdoor">Активный отдых</a></nav>
+      <div class="site-footer__contact"><h2>Нужна помощь с выбором?</h2><p>Напишите нам через форму обратной связи.</p><a class="site-footer__contact-link" href="contacts.html">Контакты <span aria-hidden="true">↗</span></a></div>
+    </div>
+    <div class="site-footer__bottom"><span>© 2026 PULSE SPORT LAB</span><a href="#main-content">Наверх ↑</a></div>
+  </div>
+</footer>
+<a class="back-to-top" href="#main-content" aria-label="Вернуться наверх">↑</a>
+<script src="js/main.js" defer></script>
+</body>
+</html>

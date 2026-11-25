@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Форма обратной связи по товарам PULSE SPORT LAB.">
+  <meta name="theme-color" content="#171b16">
+  <title>Заявка — PULSE SPORT LAB</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Перейти к содержимому</a>
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="index.html"><span class="logo__mark" aria-hidden="true">P</span><span class="logo__word">PULSE <small>SPORT LAB</small></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" hidden>Меню</button>
+    <nav id="site-menu" class="site-nav" aria-label="Основная навигация"><ul class="site-nav__list"><li><a class="site-nav__link" href="index.html">Главная</a></li><li><a class="site-nav__link" href="catalog.html">Каталог</a></li><li><a class="site-nav__link" href="guide.html">Подбор экипировки</a></li><li><a class="site-nav__link" href="contacts.html">Контакты</a></li></ul></nav>
+    <a class="button button--small site-header__cta" href="order.html">Оставить заявку</a>
+  </div>
+</header>
+<main id="main-content" tabindex="-1">
+  <section class="page-intro"><div class="container"><nav class="breadcrumbs" aria-label="Хлебные крошки"><a href="index.html">Главная</a><span aria-hidden="true">/</span><span aria-current="page">Заявка</span></nav><h1>Оставить заявку</h1><p>Выберите товар и оставьте контактные данные, если у вас есть вопрос по модели, размеру или характеристикам.</p></div></section>
+  <section class="section section--paper"><div class="container order-layout"><aside class="order-summary"><h2>Перед отправкой</h2><p>Проверьте название товара и оставьте удобный способ связи.</p><ul><li>Заполните обязательные поля.</li><li>Укажите вопрос в комментарии.</li><li>Подтвердите согласие на обработку данных.</li></ul><p class="form-hint">Учебная форма: данные не отправляются на сервер.</p></aside><div class="order-form-wrap"><form class="order-form" id="order-form"><div class="form-grid"><div class="form-field"><label for="customer-name">Имя <span aria-hidden="true">*</span></label><input id="customer-name" name="name" autocomplete="name" required maxlength="80" placeholder="Как к вам обращаться"></div><div class="form-field"><label for="customer-email">E-mail <span aria-hidden="true">*</span></label><input id="customer-email" name="email" type="email" autocomplete="email" required maxlength="120" placeholder="name@example.com"></div><div class="form-field"><label for="customer-phone">Телефон <span aria-hidden="true">*</span></label><input id="customer-phone" name="phone" type="tel" autocomplete="tel" required minlength="6" maxlength="30" placeholder="+7 (___) ___-__-__"></div><div class="form-field"><label for="customer-topic">Тема обращения <span aria-hidden="true">*</span></label><select id="customer-topic" name="topic" required><option value="">Выберите тему</option><option value="product">Вопрос по товару</option><option value="size">Подбор размера</option><option value="availability">Наличие и характеристики</option><option value="other">Другой вопрос</option></select></div><div class="form-field form-field--full"><label for="customer-product">Товар <span aria-hidden="true">*</span></label><select id="customer-product" name="product" required><option value="">Выберите товар</option><option value="Беговые кроссовки">Беговые кроссовки</option><option value="Спортивная футболка">Спортивная футболка</option><option value="Набор гантелей">Набор гантелей</option><option value="Набор фитнес-резинок">Набор фитнес-резинок</option><option value="Боксёрские перчатки">Боксёрские перчатки</option><option value="Футбольный мяч">Футбольный мяч</option><option value="Спортивная ветровка">Спортивная ветровка</option><option value="Тактический рюкзак">Тактический рюкзак</option><option value="Бутылка для воды">Бутылка для воды</option><option value="Массажный ролл">Массажный ролл</option></select></div><div class="form-field form-field--full"><label for="customer-comment">Комментарий</label><textarea id="customer-comment" name="comment" rows="4" maxlength="500" placeholder="Ваш вопрос или уточнение"></textarea></div></div><label class="checkbox-label" for="customer-agreement"><input id="customer-agreement" name="agreement" type="checkbox" required><span>Согласен(на) на обработку указанных данных в рамках демонстрационной заявки. <span aria-hidden="true">*</span></span></label><p class="form-hint">Звёздочкой отмечены обязательные поля.</p><button class="button" type="submit">Проверить заявку</button><p class="form-result" id="form-result" role="status" tabindex="-1" hidden></p></form></div></div></section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__main">
+      <div class="site-footer__brand"><a class="logo logo--footer" href="index.html"><span class="logo__mark" aria-hidden="true">P</span><span class="logo__word">PULSE <small>SPORT LAB</small></span></a><p>Спортивная экипировка<br>для движения каждый день.</p></div>
+      <nav class="site-footer__column" aria-label="Покупателям"><h2>Покупателям</h2><a href="guide.html">Подбор экипировки</a><a href="order.html">Оставить заявку</a><a href="contacts.html#faq">Частые вопросы</a></nav>
+      <nav class="site-footer__column" aria-label="Каталог"><h2>Каталог</h2><a href="catalog.html">Все товары</a><a href="catalog.html#run">Бег</a><a href="catalog.html#train">Тренировки</a><a href="catalog.html#outdoor">Активный отдых</a></nav>
+      <div class="site-footer__contact"><h2>Нужна помощь с выбором?</h2><p>Напишите нам через форму обратной связи.</p><a class="site-footer__contact-link" href="contacts.html">Контакты <span aria-hidden="true">↗</span></a></div>
+    </div>
+    <div class="site-footer__bottom"><span>© 2026 PULSE SPORT LAB</span><a href="#main-content">Наверх ↑</a></div>
+  </div>
+</footer>
+<a class="back-to-top" href="#main-content" aria-label="Вернуться наверх">↑</a>
+<script src="js/main.js" defer></script>
+</body>
+</html>
